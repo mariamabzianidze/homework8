@@ -1,0 +1,163 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  margin: 100px 0;
+  gap: 100px;
+}
+/* task N1 */
+.task1_button {
+  border: none;
+  border-radius: 25px;
+  width: 300px;
+  height: 80px;
+  color: white;
+  background-color: pink;
+  font-size: 20px;
+  letter-spacing: 5px;
+  box-shadow: 3px 3px 15px black, 3px 3px 15px white inset;
+  text-shadow: 3px 3px 5px black;
+}
+.task1_section {
+  width: 600px;
+  height: 250px;
+  background-color: pink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.task1_button:active {
+  box-shadow: 3px 3px 15px black inset, -3px -3px 15px white inset;
+  text-shadow: 1px 1px 15px black;
+}
+/* task N2 */
+
+.task2_article {
+  width: 300px;
+  background-color: blueviolet;
+}
+.task2_img {
+  width: 270px;
+  height: 270px;
+}
+.task2_h2 {
+  color: brown;
+  font-size: 30px;
+}
+.task2_p {
+  color: red;
+  font-size: 15px;
+}
+.task2_button {
+  justify-content: center;
+  width: 50px;
+  height: 20px;
+  display: flex;
+  border: none;
+  color: white;
+  font-size: 15px;
+  background-color: green;
+  border-radius: 5px;
+}
+.task2_article:hover {
+  box-shadow: 0px 0px 30px red;
+}
+.task2_img:hover {
+  overflow: hidden;
+  filter: grayscale(100%);
+  transform: scale(1.5);
+}
+
+/* task N3 */
+.task3_text {
+  color: red;
+  font-size: 140px;
+  letter-spacing: 20px;
+  animation-name: task3text;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes task3text {
+  0% {
+    text-shadow: 0px 0px 20px green, 0px 0px 50px blue;
+  }
+  /* 25%{
+    text-shadow: 0px 0px 20px blue;
+    ;
+
+  }
+  75%{
+    text-shadow: 0px 0px 20px blueviolet;
+
+  }
+  100%{
+    text-shadow: 0px 0px 20px yellow;
+
+  } */
+}
+/* task N4 */
+.task4_loader {
+  /* position: fixed; */
+  border: 35px solid green;
+  border-left: 35px solid yellow;
+  border-top: 35px solid red;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.task4_p {
+  position: absolute;
+  left: 0;
+  right: 0;
+  /* display: inline-block; */
+  text-align: center;
+  /* justify-content: center; */
+  color: green;
+}
+
+/* task N5 */
+header {
+  padding-block: 40px;
+  width: 100%;
+  background-color: darkcyan;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.task5_ul {
+  display: flex;
+  gap: 60px;
+}
+.task5_a {
+  font-size: 50px;
+  color: white;
+  text-shadow: 3px 3px 2px black;
+}
+
+.task5_a:hover {
+  text-shadow: 0 0 5px purple, 0 0 25px darkorchid, 0 0 10px purple;
+  transition: all 1s;
+}
+
+/* task N6 */
+#myProgress {
+  width: 100%;
+  background-color: grey;
+}
+
+#myBar {
+  width: 1%;
+  height: 30px;
+  background-color: green;
+}
