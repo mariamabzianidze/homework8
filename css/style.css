@@ -32,7 +32,7 @@
   text-shadow: 1px 1px 15px black;
 }
 /* task N2 */
-..task2_article {
+.task2_article {
   width: 600px;
   margin: auto;
   padding: 50px;
