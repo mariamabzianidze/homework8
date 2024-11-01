@@ -13,7 +13,7 @@
   width: 300px;
   height: 80px;
   color: white;
-  background-color: pink;
+  background-color: rgb(240, 97, 180);
   font-size: 20px;
   letter-spacing: 5px;
   box-shadow: 3px 3px 15px black, 3px 3px 15px white inset;
@@ -22,7 +22,7 @@
 .task1_section {
   width: 600px;
   height: 250px;
-  background-color: pink;
+  background-color: rgb(240, 97, 180);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,13 +32,13 @@
   text-shadow: 1px 1px 15px black;
 }
 /* task N2 */
-
 .task2_article {
   width: 300px;
   margin: auto;
   padding: 15px;
   display: flex;
   flex-direction: column;
+  gap: 15px;
 }
 .task2_img {
   width: 270px;
@@ -62,7 +62,6 @@
   font-size: 15px;
 }
 .task2_button {
-  /* justify-content: space-between; */
   justify-content: center;
   width: 50px;
   height: 20px;
@@ -77,14 +76,13 @@
   box-shadow: 0px 0px 30px red;
 }
 .task2_img:hover {
-  overflow: hidden;
+  /* overflow: hidden; */
   filter: grayscale(100%);
   transform: scale(1.5);
 }
-
 /* task N3 */
 .task3_text {
-  color: red;
+  color: rgb(221, 52, 52);
   font-size: 140px;
   letter-spacing: 20px;
   animation-name: task3text;
@@ -110,7 +108,6 @@
 .task4_loader:hover {
   animation-play-state: paused;
 }
-
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -124,17 +121,16 @@
 }
 .task4_p {
   font-size: 70px;
-  color: green;
+  color: rgb(0, 71, 0);
   position: absolute;
   z-index: 1;
   margin: 110px 65px;
 }
-
 /* task N5 */
-header {
+.task5_header {
   padding-block: 40px;
   width: 100%;
-  background-color: darkcyan;
+  background-color: rgb(0, 77, 77);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -154,12 +150,23 @@ header {
   transition: all 1s;
 }
 /* task N6 */
-.progress {
+.task6_bar {
   width: 100%;
-  background-color: grey;
+  height: 40px;
+  background-color: rgb(207, 179, 179);
 }
-.bar {
-  width: 1%;
-  height: 30px;
-  background-color: green;
+.task6_progress {
+  width: 0;
+  height: 100%;
+  animation: loadingbar 10s forwards;
+  background-color: rgb(21, 255, 0);
+  border-radius: 5px;
+}
+@keyframes loadingbar {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
 }
